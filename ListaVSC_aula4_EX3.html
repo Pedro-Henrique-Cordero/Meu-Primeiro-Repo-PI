@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista4 HTML</title>
+</head>
+<body>
+    <h1>Exercicio 3</h1>
+    Entre com o numero: <input id="N">
+    <button onclick="VT()">Ver Tabuada</button>
+    <div id="Tabuada"></div>
+</body>
+</html>
+<script>
+function VT() {
+    var N1 = Number(N.value)
+    var Resp1 = N1 * 1
+    var Resp2 = N1 * 2
+    var Resp3 = N1 * 3
+    var Resp4 = N1 * 4
+    var Resp5 = N1 * 5
+    var Resp6 = N1 * 6
+    var Resp7 = N1 * 7
+    var Resp8 = N1 * 8
+    var Resp9 = N1 * 9
+    var Resp10 = N1 * 10
+    
+    Tabuada.innerHTML = `
+    ${N1} x 1 = ${Resp1}<br>
+    ${N1} x 2 = ${Resp2}<br>
+    ${N1} x 3 = ${Resp3}<br>
+    ${N1} x 4 = ${Resp4}<br>
+    ${N1} x 5 = ${Resp5}<br>
+    ${N1} x 6 = ${Resp6}<br>
+    ${N1} x 7 = ${Resp7}<br>
+    ${N1} x 8 = ${Resp8}<br>
+    ${N1} x 9 = ${Resp9}<br>
+    ${N1} x 10 = ${Resp10}`
+}
+
+
+</script>
