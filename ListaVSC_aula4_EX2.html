@@ -21,7 +21,7 @@ function RE() {
     var VCA_Total = Number(CA.value) / Number(Total_votos) * 100
     var VCB_Total =  Number(CB.value) / Number(Total_votos) * 100
     var V_invalidos =  Number(VN.value) +  Number(VB.value)
-    var V_VotosIN = number(V_invalidos) /  Number(Total_votos)
+    var V_VotosIN = Number(V_invalidos) /  Number(Total_votos) * 100
     Voto.innerHTML = `Total de Votos: ${Total_votos}<br>
     Candidato A: 40% (${VCA_Total})<br>
     Candidato B: 35% (${VCB_Total})<br>
