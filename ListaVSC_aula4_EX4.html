@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 4</title>
+</head>
+<body>
+    <h1>Exercicio 4</h1>
+Entre com o valar da pizza: <input id="VP"><br><br>
+Entre com o sabor da pizza: <input id="SP"><br><br>
+Entre com a quantidade de amigos: <input id="QA"><br><br>
+<button onclick="VpA()">Ver Valor por Amigo</button>
+<div id="div"></div>
+</body>
+</html>
+<script>
+function VpA() {
+  var CE = Number(VP.value) * 0.10
+  var VPT = CE + Number(VP.value)
+  var VpA = VPT / Number(QA.value)
+  div.innerHTML = `Cada amigo vai colaborar com R$${VpA} para a pizza de ${SP.value}.`
+}
+
+</script>
